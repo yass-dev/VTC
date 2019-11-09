@@ -1,0 +1,666 @@
+@font-face
+{
+	font-family: "Raleway";
+	src: "fonts/Raleway-Regular.ttf";
+}
+
+html
+{
+	font-size: 10px;
+	height: 100%;
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body
+{
+	background-color: #fff;
+	margin: 0px;
+    padding: 0px;
+    overflow: visible;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+header
+{
+	display: flex;
+	position: absolute;
+	z-index: 200;
+	width: 100%;
+	height: 10%;
+	background-color: rgba(0, 0, 0, 0.95);
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 0px;
+}
+
+h1
+{
+	color: #ffffff;
+	font-size: 28px;
+	width: 100%;
+}
+
+#page
+{
+	width: 100%;
+	height: 100%;
+}
+
+img
+{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@-webkit-keyframes zoomImage
+{
+  	from {transform : matrix(1, 0, 0, 1, 0, 0) rotate(0.01deg)}
+  	to {transform : matrix(1.08, 0, 0, 1.08, 0, 0) rotate(0.01deg)}
+}
+
+.headerBarNav
+{
+	position: fixed;
+	background-color: black !important;
+	font-family: "Raleway", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	height: 15%;
+}
+
+#backgroundIMG
+{
+	display: block;
+	max-height: 650px;
+	width: 100%;
+	z-index: 0;
+	position: fixed;
+	top: 15px;
+}
+
+.zoom-image-animated
+{
+	-webkit-animation-name: zoomImage; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+	animation-name: zoomImage;
+	animation-duration: 5s;
+}
+
+#backgroundIMG img
+{
+	width: 100%;
+	height: 100%;
+}
+
+#firstDiv
+{
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	z-index: 20;
+	height: fit-content;
+	margin-top: 14vh;
+	background-image: url("../../../img/img-acceuil.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.big
+{
+	font-size: 38px;
+	font-weight: bold;
+}
+
+#presentationDiv
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: /*#151618*/ black;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.in-front
+{
+	z-index: 20;
+}
+
+.flex-column
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex
+{
+	display: flex;
+}
+
+.flex-wrap
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#choixTrajetDiv
+{
+	display: block;
+	height: auto;
+	width: 100%;
+	padding-right: 10%;
+	padding-left: 10%;
+	padding-top: 3%;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+#mapContainer
+{
+	display: block;
+	width: 100%;
+	height: 500px;
+}
+
+#map
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.size100
+{
+	width: 100%;
+	height: 100%;
+}
+
+.formBar
+{
+	display: block;
+	width: 100%;
+	height: 50%;
+	background-color: white;
+}
+
+.headerBar
+{
+	display: block;
+    width: 100%;
+    height: 5.5vh;
+    background-color: black;
+    color: #e9ba1b;
+    text-align: center;
+    border: 1px solid black;
+}
+
+div
+{
+	display: block;
+}
+
+#reservationForm
+{
+	display: block;
+	height: 30%;
+	width: 100%;
+}
+
+.reservationForm input, .reservationForm select
+{
+	width: 100%;
+	height: 25%;
+	color: black;
+	font-size: 15px;
+}
+
+input::-webkit-input-placeholder
+{
+	font-size: 12px;
+	color: gray;
+}
+
+.space10
+{
+	height: 10%;
+}
+
+#headerDestination, #headerTrajetOption
+{
+	display: block;
+	height: 25%;
+	width: 100%;
+	background-color: #ec6200;
+	text-align: center;
+	font-size: 20px;
+}
+
+#optionTrajetForm
+{
+	display: block;
+	height: 30%;
+	width: 100%;
+}
+
+#optionTrajetForm label, #optionTrajetForm select 
+{
+	font-size: 12px;
+	color: black;
+	text-align: center;
+}
+
+#passagersContainer
+{
+	width: 100%;
+}
+
+#passagersContainer input
+{
+	height: 100%;
+}
+
+.passagersSelect
+{
+	display: block;
+	width: 100%;
+	height: 12.5%;
+	color: black;
+}
+
+#optionTrajetForm select, #optionTrajetForm label
+{
+
+}
+
+#locationField, #controls
+{
+        position: relative;
+        width: 480px;
+}
+#autocomplete
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+	width: 99%;
+}
+.label 
+{
+	text-align: right;
+	font-weight: bold;
+    width: 100px;
+    color: #303030;
+    font-family: "Roboto";
+}
+#address
+{
+	border: 1px solid #000090;
+    background-color: #f0f9ff;
+    width: 480px;
+    padding-right: 2px;
+}
+#address td
+{
+	font-size: 10pt;
+}
+.field
+{
+	width: 99%;
+}
+.slimField
+{
+	width: 80px;
+}
+.wideField
+{
+    width: 200px;
+}
+#locationField
+{
+    height: 20px;
+    margin-bottom: 2px;
+}
+
+.modalEmail
+{
+	z-index: 99999999;
+	color: black;
+	background-color: orange;
+}
+
+#emailInput, .emailInput
+{
+	width: 100%;
+	height: 30px;
+}
+
+#submitEmail
+{
+	background: #ef5018 !important;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-bottom-width: 0px !important;
+    border-color: rgba(0,0,0,.35) !important;
+    border-left-width: 0px !important;
+    border-right-width: 0px !important;
+    border-style: none !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-top-width: 0px !important;
+    box-shadow: 0px 0px 0px 0px #ffffff !important;
+    color: #ffffff !important;
+    font-family: Helvetica !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    -webkit-letter-spacing: 0 !important;
+    -moz-letter-spacing: 0 !important;
+    -ms-letter-spacing: 0 !important;
+    letter-spacing: 0 !important;
+    line-height: 1 !important;
+    max-width: 100% !important;
+    margin-bottom: 8px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-top: 10px !important;
+    padding-bottom: 14px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    padding-top: 14px !important;
+    text-transform: none !important;
+    -webkit-text-decoration: none !important;
+    text-decoration: none !important;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+#contactDiv
+{
+	height: 100%;
+	width: auto;
+	color: black;
+	padding-bottom: 5%;
+	padding-top: 2%;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.slider
+{
+	width: 100%;
+  	height: 100%;
+  	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+
+.slide
+{
+	display: block;	
+	width: 100%;
+  	height: 100%;
+	position: absolute;
+}
+
+#s0
+{
+	left: 0%;
+}
+
+#s1
+{
+	left: 100%;
+}
+
+#s2
+{
+	left: 200%;
+}
+
+#s3
+{
+	left: 300%;
+}
+
+.circleImage
+{
+	border-radius: 100%;
+}
+
+.conteneur-item-info
+{
+	width: 20%;
+	height: auto;
+}
+
+.conteneur-item-info p
+{
+	font-size: 18px;
+}
+
+.tarifBlock
+{
+	display: block;
+	max-height: 80vh;
+	overflow: visible;
+	width: 80%;
+	background-color: white;
+	margin-bottom: 10px;
+	margin-top: 40px;
+	opacity: 1;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Raleway';
+	border: solid 2px #c0991a;
+	padding-bottom: 2%;
+}
+
+#tarifsDiv
+{
+	display: block;
+	padding-bottom: 3%;
+	margin-top: 5vh;
+}
+
+.text-center
+{
+	text-align: center;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.modal-open
+{
+    overflow: scroll;
+}
+
+#contactMe
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	width: 45%;
+	justify-content: center;
+}
+
+#contactMe p
+{
+	font-size: 18px;
+}
+
+#contactMe input
+{
+	width: 100%;
+	height: 25px;
+}
+
+#contactMe textarea
+{
+	width: 100%;
+	height: 100px;
+}
+
+#contactMe button
+{
+	background-color: black;
+	width: 50%;
+	color: white;
+	height: 35px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Raleway';
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+.textContainer
+{
+	color: black;
+	font-weight: normal;
+	font-size: 20px;
+	font-family: "Raleway";
+}
+
+.reserverButton
+{
+	width: 40%;
+    background-color: #c0991a;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+}
+
+#reserverFormButton
+{
+	width: 100%;
+	background-color: #ef5018;
+	height: 40px;
+    color: white;
+    font-size: 20px;
+    border: solid 1px #ef5018;
+}
+
+.headerLink
+{
+	color: white;
+	cursor: pointer !important;
+}
+
+.headerLink.active
+{
+	color: rgb(233, 186, 27) !important;
+	border-bottom: solid 2px rgb(233, 186, 27);
+}
+
+#reserverAccueilButton
+{
+	max-width: 10%;
+	min-width: 100px;
+	max-height: 50%;
+	opacity: 0.8;
+	font-size: 18px;
+	background-color: black;
+	color: rgb(233, 186, 27);
+	border: solid 2px #e8b660;
+}
+
+.containerReservationContact
+{
+	/*background-image: url("../../img/image-fond-resa.png");*/
+	background-color: black;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.containerContact
+{
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.75);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.contactInput
+{
+	width: 100%;
+	height: 40px;
+	text-indent: 10px;
+}
+
+input[type="text"], textarea
+{
+	background-color: rgba(255, 255, 255, 1);
+}
+
+textarea
+{
+	font-size: 12px;
+}
+
+.submitButton
+{
+	width: 33%;
+	height: 35px;
+	cursor: pointer;
+	background-color: white;
+	color: #c0991a;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #c0991a;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.margin-top-10
+{
+	margin-top: 10px;
+}
+
+.infoContainer p
+{
+	font-size: 15px;
+}
+
+.horizontal-line
+{
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 2px;
+	background-color: #e9ba1b;
+}
+
+.center
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#submitReservation
+{
+    background-color: green;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+}
